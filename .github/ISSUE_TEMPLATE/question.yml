@@ -1,0 +1,62 @@
+name: Question / Support
+description: Ask a question or get help
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question or need help? Please provide details below.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What do you need help with?
+      placeholder: How do I...
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What are you trying to accomplish?
+      placeholder: I'm trying to...
+    validations:
+      required: false
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: Cobblemon EMI Compat Version
+      description: If relevant, what version are you using?
+      placeholder: e.g., 1.0.0
+    validations:
+      required: false
+
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft Version
+      description: If relevant, what Minecraft version?
+      placeholder: e.g., 1.21.1
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your question
+      placeholder: Drag and drop images here...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Anything else that might be relevant
+    validations:
+      required: false

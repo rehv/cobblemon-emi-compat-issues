@@ -1,0 +1,101 @@
+name: Compatibility Issue
+description: Report a compatibility problem with another mod
+title: "[Compatibility] "
+labels: ["compatibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a compatibility issue!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue Description
+      description: Describe the compatibility problem
+      placeholder: When using X mod with Cobblemon EMI Compat...
+    validations:
+      required: true
+
+  - type: input
+    id: conflicting-mod
+    attributes:
+      label: Conflicting Mod
+      description: Name of the mod causing compatibility issues
+      placeholder: e.g., Some Other Mod
+    validations:
+      required: true
+
+  - type: input
+    id: conflicting-version
+    attributes:
+      label: Conflicting Mod Version
+      placeholder: e.g., 2.3.1
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this compatibility issue?
+      placeholder: |
+        1. Install both mods
+        2. Do...
+        3. See issue...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen when both mods are installed?
+      placeholder: I expected...
+    validations:
+      required: true
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: Cobblemon EMI Compat Version
+      placeholder: e.g., 1.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft Version
+      placeholder: e.g., 1.21.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mod-loader
+    attributes:
+      label: Mod Loader
+      options:
+        - Forge
+        - NeoForge
+        - Fabric
+    validations:
+      required: true
+
+  - type: textarea
+    id: crash-log
+    attributes:
+      label: Crash Log / Error Log
+      description: If applicable, provide crash or error logs (use https://mclo.gs or https://pastebin.com)
+      placeholder: Paste log link here...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other relevant information
+      placeholder: Other mods, special configurations, etc...
+    validations:
+      required: false
