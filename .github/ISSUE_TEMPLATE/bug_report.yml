@@ -71,7 +71,6 @@ body:
       label: Mod Loader
       description: Which mod loader are you using?
       options:
-        - Forge
         - NeoForge
         - Fabric
     validations:

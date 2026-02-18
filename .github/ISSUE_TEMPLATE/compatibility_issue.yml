@@ -76,7 +76,6 @@ body:
     attributes:
       label: Mod Loader
       options:
-        - Forge
         - NeoForge
         - Fabric
     validations:
